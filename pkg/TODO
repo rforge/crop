@@ -1,0 +1,7 @@
+- Provide svg support (not sure how to crop; via inkscape? see
+  https://shkspr.mobi/blog/2013/03/inkscape-cropping-svg-files-on-the-command-line/
+  )
+  Example:
+  svg(filename=(file <- "crop.svg"))
+  plot(x, y, xlab="x", ylab="y")
+  dev.off.crop(file=file)
