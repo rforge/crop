@@ -1,5 +1,5 @@
 Package: crop
-Version: 0.0-2
+Version: 0.0-3
 Encoding: UTF-8
 Title: Graphics Cropping Tool
 Description: A device closing function which is able to crop graphics (e.g.,
