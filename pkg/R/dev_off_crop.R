@@ -12,6 +12,7 @@ dev.off.crop <- function(file = NULL, warn = TRUE, ...)
     dev.off(...)
 
     ## Check
+    stopifnot(length(file) == 1) # otherwise 'switch(file.ext.low, ...)' below fails
     if(!is.null(file)) { # cropping should be done
         if(.Platform$OS.type != "unix") {
             if(warn) warning("dev.off.crop() only works on Unix(-like) systems; no cropping is done.")
